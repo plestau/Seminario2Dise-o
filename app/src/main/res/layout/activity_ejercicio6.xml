@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Chat instantáneo"
+            android:textSize="28sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#F5F5F5"
+            app:cardCornerRadius="12dp"
+            android:layout_toEndOf="@id/circulo1"
+            android:layout_marginTop="8dp">
+
+            <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- TextView para el nombre -->
+                <TextView
+                    android:id="@+id/nombreAjeno1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Ajeno"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_margin="8dp" />
+
+                <!-- TextView para el mensaje -->
+                <TextView
+                    android:id="@+id/textoAjeno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mensaje ajeno que puede ser más largo y ajustar la altura automáticamente"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_margin="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#F5F5F5"
+                app:cardCornerRadius="12dp"
+                android:layout_toEndOf="@id/circulo2"
+                android:layout_marginTop="8dp">
+
+                <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- TextView para el nombre -->
+                    <TextView
+                        android:id="@+id/nombreAjeno2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Ajeno"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                    <!-- TextView para el mensaje -->
+                    <TextView
+                        android:id="@+id/textoAjeno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensaje ajeno que puede ser más largo y ajustar la altura automáticamente"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#64B5F6"
+                app:cardCornerRadius="12dp"
+                android:layout_toEndOf="@id/circulo3"
+                android:layout_marginTop="8dp">
+
+                <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- TextView para el nombre -->
+                    <TextView
+                        android:id="@+id/nombrePropio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Propio"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                    <!-- TextView para el mensaje -->
+                    <TextView
+                        android:id="@+id/textoPropio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensaje propio que puede ser más largo y ajustar la altura automáticamente"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo4"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#64B5F6"
+                app:cardCornerRadius="12dp"
+                android:layout_toEndOf="@id/circulo4"
+                android:layout_marginTop="8dp">
+
+                <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- TextView para el nombre -->
+                    <TextView
+                        android:id="@+id/nombrePropio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Propio"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                    <!-- TextView para el mensaje -->
+                    <TextView
+                        android:id="@+id/textoPropio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensaje propio que puede ser más largo y ajustar la altura automáticamente"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo5"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#F5F5F5"
+                app:cardCornerRadius="12dp"
+                android:layout_toEndOf="@id/circulo5"
+                android:layout_marginTop="8dp">
+
+                <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- TextView para el nombre -->
+                    <TextView
+                        android:id="@+id/nombreAjeno3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Ajeno"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                    <!-- TextView para el mensaje -->
+                    <TextView
+                        android:id="@+id/textoAjeno3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensaje ajeno que puede ser más largo y ajustar la altura automáticamente"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo6"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#64B5F6"
+                app:cardCornerRadius="12dp"
+                android:layout_toEndOf="@id/circulo6"
+                android:layout_marginTop="8dp">
+
+                <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- TextView para el nombre -->
+                    <TextView
+                        android:id="@+id/nombrePropio3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Propio"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                    <!-- TextView para el mensaje -->
+                    <TextView
+                        android:id="@+id/textoPropio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensaje propio que puede ser más largo y ajustar la altura automáticamente"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/circulo7"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circulo"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#F5F5F5"
+                app:cardCornerRadius="12dp"
+                android:layout_toEndOf="@id/circulo7"
+                android:layout_marginTop="8dp">
+
+                <!-- Añadir un LinearLayout vertical para organizar el nombre y el mensaje -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- TextView para el nombre -->
+                    <TextView
+                        android:id="@+id/nombreAjeno4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre Ajeno"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                    <!-- TextView para el mensaje -->
+                    <TextView
+                        android:id="@+id/textoAjeno4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mensaje ajeno que puede ser más largo y ajustar la altura automáticamente"
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_margin="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

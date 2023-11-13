@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ejercicio 3"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/cardview_shadow_start_color"/>
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cadena a insertar"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/titulo"/>
+
+    <EditText
+        android:id="@+id/cadena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/texto" />
+
+    <Button
+        android:id="@+id/insertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundstyle"
+        android:text="Insertar dato"
+        app:layout_constraintTop_toBottomOf="@id/cadena" />
+
+    <Button
+        android:id="@+id/nuevaActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundstyle"
+        android:text="Pasar datos a nueva actividad"
+        app:layout_constraintTop_toBottomOf="@id/insertar" />
+
+    <TextView
+        android:id="@+id/tituloInsertadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadenas insertadas: "
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/nuevaActividad"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/insertadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tituloInsertadas"
+        android:layout_margin="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
